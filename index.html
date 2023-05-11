@@ -47,11 +47,6 @@
                             aria-describedby="helpId">
                     </div>
                     <div class="mb-3">
-                        <label for="carrerStudent" class="form-label">Carrera</label>
-                        <input type="text" name="carrerStudent" id="carrerStudent" class="form-control" placeholder="Desarrollo de Software"
-                            aria-describedby="helpId">
-                    </div>
-                    <div class="mb-3">
                         <label for="levelStudent" class="form-label">Nivel</label>
                         <input type="text" name="levelStudent" id="levelStudent" class="form-control" placeholder="3"
                             aria-describedby="helpId">
@@ -60,6 +55,7 @@
                 </div>
                 <div class="card-footer text-muted">
                     <button class="btn btn-primary" onclick="addStudent()">Agregar</button>
+                    
                 </div>
             </div>
             <hr>
@@ -85,21 +81,59 @@
                             aria-describedby="helpId">
                     </div>
                     <div class="mb-3">
+                        <label for="carrerTeacher" class="form-label">Carrera</label>
+                        <select name="carrerTeacher" id="carrerTeacher" >
+                            <option value="turismo">Turismo</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="desarrollo">Desarrollo de software</option>
+
+                        </select>
+                    </div>
+                    <div class="mb-3">
                         <label for="titleTeacher" class="form-label">Titulo</label>
                         <input type="text" name="titleTeacher" id="titleTeacher" class="form-control" placeholder="012"
                             aria-describedby="helpId">
                     </div>
                     <div class="mb-3">
                         <label for="asignatureTeacher" class="form-label">Asignatura</label>
-                        <input type="text" name="asignatureTeacher" id="asignatureTeacher" class="form-control" placeholder="Desarrollo de Software"
-                            aria-describedby="helpId">
+                        <select name="asignatureTeacher" id="asignatureTeacher" >
+                            <option value="Interfaces">Interfaces</option>
+                            <option value="Programación">Programación</option>
+                            <option value="Base de datos">Base de datos</option>
+
+                        </select>
                     </div>
 
                 </div>
                 <div class="card-footer text-muted">
-                    <button class="btn btn-primary">Agregar</button>
+                    <button class="btn btn-primary" onclick="addTeacher()">Agregar</button>
                 </div>
             </div>
+            <hr>
+            <!-- Cursos -->
+            <div class="card">
+                <div class="card-header">
+                    <h1>Cursos</h1>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="areaCourse" class="form-label">Area</label>
+                        <input type="text" name="areaCourse" id="areaCourse" class="form-control" placeholder="Tecnologia"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameCourse" class="form-label">Nombre</label>
+                        <input type="text" name="nameCourse" id="nameCourse" class="form-control" placeholder="1752486395"
+                            aria-describedby="helpId">
+                    </div>
+                    
+
+                </div>
+                <div class="card-footer text-muted">
+                    <button class="btn btn-primary" onclick="addCourse()">Agregar</button>
+                </div>
+            </div>
+
 
         </div>
     </main>
